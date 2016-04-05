@@ -1,0 +1,5 @@
+files:
+  - index.js
+  - .gitignore
+  - app/main.js
+command: node index.js

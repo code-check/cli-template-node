@@ -1,0 +1,31 @@
+{
+  "name": "codecheck-cli-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "codecheck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-check/cli-template-node.git"
+  },
+  "keywords": [
+    "codecheck",
+    "cli",
+    "node"
+  ],
+  "author": "Givery Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-check/cli-template-node/issues"
+  },
+  "homepage": "https://github.com/code-check/cli-template-node#readme",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "codecheck": "^0.5.2"
+  }
+}
