@@ -2,4 +2,5 @@ files:
   - index.js
   - .gitignore
   - app/main.js
+  - package.json
 command: node index.js
