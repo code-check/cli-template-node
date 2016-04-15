@@ -1,8 +1,9 @@
 "use strict";
 
 function main(args, options) {
-  //console.log(args);
-  //console.log(options);
+  args.forEach(v => {
+    console.log(v);
+  });
 }
 
 module.exports = main;
