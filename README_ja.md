@@ -1,24 +1,31 @@
-# CLIアプリケーション作成用テンプレート(nodejs)
+# CLIアプリケーション作成方法 (Node.js)
 
-NodeJSでCLIアプリケーションを作成するためのテンプレートです。
+codecheckチャレンジの解答をCLIアプリケーションとして作成する方法を教えるよ。
 
-[app/main.js](app/main.js)を編集することでCLIアプリケーションを作成することができます。
+## 必須条件
 
-## コマンドライン引数の取得方法
-main.jsでは関数`main`が以下のように定義されています。
+- Node.js（バージョンについては[ドキュ](https://code-check.github.io/docs/ja/reference_users/#serverside-language-and-tool-versions)を見てね。)
+
+## 引数の取得
+
+[app/main.js](app/main.js)に`main`という関数が定義されてる。  
+この関数を編集することでCLIアプリケーションが作成できるぞ。
 
 ``` js
 function main(args, options) {
-}
+  args.forEach(arg => {
+    // 以下の行を自分のコードと置換してね。
+    result = arg;
 ```
 
-- 引数`args`には通常の引数が文字列の配列として渡されます。
-- 引数`options`にはオプション引数がオブジェクトとして渡されます。
-  - オプション引数とは「-」付きのプレフィクスを指定して渡された引数のことです。
+コマンドラインの通常引数は`args`に配列として渡される。  
+
+で、引数`options`にはオプション引数がオブジェクトとして渡される。
+オプション引数とは「-」付きのプレフィクスを指定して渡された引数のことね。
 
 ## コマンド実行結果の標準出力への出力
-`console.log`を使用できます。
+`stdout`への出力は標準の`console.log()`メソッドを使用してね。
 
 ``` js
-  console.log("HOGE");
+  console.log(result);
 ```

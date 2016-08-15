@@ -1,22 +1,30 @@
-# CLI template for nodejs
+# CLI Applications with Node.js
 
-This is template app for CLI test.  
-You can make console application by editing [app/main.js](app/main.js)
+Here's how to build your codecheck challenge solution as a CLI application.  
 
-## How to get input parameters
-main.js has a function `main`.
+## Requirements
+
+- Node.js (For the version see our [docs](https://code-check.github.io/docs/en/reference_users/#serverside-language-and-tool-versions) .)
+
+## Recieve Inputs
+
+In [app/main.js](app/main.js) is a function called `main`.
+Build your console application there.  
 
 ``` js
 function main(args, options) {
-}
+  args.forEach(arg => {
+    // Replace below line with your code.
+    result = arg;
 ```
 
-- `args` is array of parameter.
-- `options` is command line option specified with `-` prefix.
+All `stdin` input arguments are passed into `args` as an array.  
 
-## How to output result
-You can use console.log
+Options, defined as any arguments from the CLI that have the '-' prefix, are passed into `options` as an object.
+
+## Output Results
+Use the standard `console.log` method to output results to `stdout`.
 
 ``` js
-  console.log("HOGE");
+  console.log(result);
 ```
