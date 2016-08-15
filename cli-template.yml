@@ -3,4 +3,5 @@ files:
   - .gitignore
   - app/main.js
   - package.json
+main: app/main.js
 command: node index.js
