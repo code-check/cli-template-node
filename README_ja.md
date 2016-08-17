@@ -5,6 +5,8 @@ codecheckチャレンジの解答をCLIアプリケーションとして作成�
 ## 必須条件
 
 - Node.js（バージョンについては[ドキュ](https://code-check.github.io/docs/ja/reference_users/#serverside-language-and-tool-versions)を見てね。)
+- Minimist (コマンドラインの引数処理用のユーティリティ。詳しくは[レポ](https://github.com/substack/minimist)をチェック。  
+  *インストール不要。Node.jsのdependencyは全て`codecheck`が管理してくれます。*)
 
 ## 引数の取得
 

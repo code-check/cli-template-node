@@ -5,6 +5,7 @@ Here's how to build your codecheck challenge solution as a CLI application.
 ## Requirements
 
 - Node.js (For the version see our [docs](https://code-check.github.io/docs/en/reference_users/#serverside-language-and-tool-versions) .)
+- Minimist (For parsing arguments from CLI. For details see their [repo](https://github.com/substack/minimist).   *No installation necessary, `codecheck` handles all Node.js dependencies*.)
 
 ## Recieve Inputs
 
