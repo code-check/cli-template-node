@@ -1,5 +1,7 @@
 "use strict";
 
-module.exportsq = (argv) => {
+function main(argv) {
   argv.slice(2).forEach(v => console.log(v));
 }
+
+module.exports = main;
