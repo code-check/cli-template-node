@@ -1,32 +1,22 @@
-# CLI Applications with Node.js
+# Command line application template for Node.js
 
-Here's how to build your codecheck challenge solution as a CLI application.  
+Implement CLI application by editing [main.js](app/main.js).  
+You may add new files to keep your code clean, if it is allowed in your challenge.
 
-## Requirements
-
-- Node.js (For the version see our [docs](https://code-check.github.io/docs/en/reference_users/#serverside-language-and-tool-versions) .)
-- Minimist (For parsing arguments from CLI. For details see their [repo](https://github.com/substack/minimist).  
- *It's already in package.json, so no need to add it manually*.)
-
-## Recieve Inputs
-
-In [app/main.js](app/main.js) is a function called `main`.
-Build your console application there.  
+## How to get input parameters
+You can get arguments as `args` in [main.js](app/main.js) where the `main` method is defined.
 
 ``` js
-function main(args, options) {
-  args.forEach(arg => {
-    // Replace below line with your code.
-    result = arg;
+function main(argv) {
+  // code to run
+}
 ```
 
-All `stdin` input arguments are passed into `args` as an array.  
+This `argv` is simply came from `process.argv` passed by `index.js`.
 
-Options, defined as any arguments from the CLI that have the '-' prefix, are passed into `options` as an object.
-
-## Output Results
+## How to output result
 Use the standard `console.log` method to output results to `stdout`.
 
 ``` js
-  console.log(result);
+console.log(result);
 ```

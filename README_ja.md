@@ -1,33 +1,22 @@
-# CLIアプリケーション作成方法 (Node.js)
+# コマンドラインアプリケーション(CLI アプリ)作成用テンプレート(Node.js)
 
-codecheckチャレンジの解答をCLIアプリケーションとして作成する方法を教えるよ。
+[main.js](app/main.js)を編集して、CLIアプリを実装してください。  
+チャレンジ内でファイルの作成が許可されていれば、可読性等のためにファイルを分割する事も可能です。
 
-## 必須条件
-
-- Node.js（バージョンについては[ドキュ](https://code-check.github.io/docs/ja/reference_users/#serverside-language-and-tool-versions)を見てね。)
-- Minimist (コマンドラインの引数処理用のユーティリティ。詳しくは[レポ](https://github.com/substack/minimist)をチェック。  
-  *package.jsonに含まれているので自分で追加する必要なし。*)
-
-## 引数の取得
-
-[app/main.js](app/main.js)に`main`という関数が定義されてる。  
-この関数を編集することでCLIアプリケーションが作成できるぞ。
+## コマンドライン引数の取得方法
+[main.js](app/main.js) に定義されている `main` という関数から `argv` の名前で取得可能です。
 
 ``` js
-function main(args, options) {
-  args.forEach(arg => {
-    // 以下の行を自分のコードと置換してね。
-    result = arg;
+function main(argv) {
+  // code to run
+}
 ```
 
-コマンドラインの通常引数は`args`に配列として渡される。  
-
-で、引数`options`にはオプション引数がオブジェクトとして渡される。
-オプション引数とは「-」付きのプレフィクスを指定して渡された引数のことね。
+ここの argv は `process.argv` の内容がそのまま渡されています。
 
 ## コマンド実行結果の標準出力への出力
-`stdout`への出力は標準の`console.log()`メソッドを使用してね。
+`stdout`への出力は標準の`console.log()`メソッドを使用してください。
 
 ``` js
-  console.log(result);
+console.log(result);
 ```

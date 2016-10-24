@@ -1,11 +1,5 @@
 "use strict";
 
-function main(args, options) {
-  args.forEach(arg => {
-    // Replace below line with your code.
-    result = arg;
-    console.log(result);
-  });
+module.exportsq = (argv) => {
+  argv.slice(2).forEach(v => console.log(v));
 }
-
-module.exports = main;
