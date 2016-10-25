@@ -25,9 +25,3 @@ console.log(result);
 外部ライブラリを使用する場合は以下の手順で実施してください。
 
 - [package.json](package.json) に依存関係を追加
-- [codecheck.yml](codecheck.yml)に以下の内容を追加  
-
-``` yaml
-build:
-  - npm install
-```

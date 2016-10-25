@@ -20,3 +20,8 @@ Use the standard `console.log` method to output results to `stdout`.
 ``` js
 console.log(result);
 ```
+
+## Install External Libraries
+If you want to use external libraries, do the following:
+
+- Add dependency information in [package.json](package.json)
