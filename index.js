@@ -2,4 +2,4 @@
 
 const main = require("./app/main");
 
-main(process.argv);
+main(process.argv.slice(2));

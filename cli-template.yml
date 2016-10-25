@@ -1,7 +1,9 @@
+build:
+  - npm install
 files:
-  - index.js
   - .gitignore
-  - app/main.js
   - package.json
+  - index.js
+  - app/main.js
 main: app/main.js
 command: node index.js
