@@ -6,22 +6,12 @@
   "scripts": {
     "test": "codecheck"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/code-check/cli-template-node.git"
-  },
   "keywords": [
     "codecheck",
     "cli",
     "node"
   ],
-  "author": "Givery Inc.",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/code-check/cli-template-node/issues"
-  },
-  "homepage": "https://github.com/code-check/cli-template-node#readme",
-  "dependencies": {  },
   "devDependencies": {
     "chai": "^3.5.0",
     "codecheck": "^0.5.3"
