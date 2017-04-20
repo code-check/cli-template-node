@@ -6,7 +6,7 @@ function main(argv) {
    * このコードは好きなように編集・削除してもらって構いません。
    *
    * This is a sample code to use arguments and outputs.
-   * You can edit and even delte this code as you like.
+   * You can edit and even remove this code as you like.
    */
   argv.forEach((v, i) => console.log(`argv[${i}]: ${v}`));
 }
