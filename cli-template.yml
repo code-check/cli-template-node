@@ -1,9 +1,9 @@
 build:
   - npm install
 files:
-  - .gitignore
   - package.json
-  - index.js
-  - app/main.js
-main: app/main.js
-command: node index.js
+  - main.js
+main: main.js
+command: node main.js
+envConf:
+  imageName: "givery/track-nodejs-8"
