@@ -1,5 +1,5 @@
 build:
-  - npm install
+  - npm install --no-package-lock
 files:
   - package.json
   - main.js

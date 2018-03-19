@@ -1,5 +1,5 @@
 build:
-  - npm install
+  - npm install --no-package-lock
 env:
   APP_COMMAND: node index.js
 test: mocha test
