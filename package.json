@@ -2,7 +2,6 @@
   "name": "track-cli-template",
   "description": "CLI template for nodejs application",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "test": "mocha --exit -R tap"
